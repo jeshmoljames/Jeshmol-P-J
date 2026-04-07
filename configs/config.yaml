@@ -1,0 +1,17 @@
+dataset:
+  num_videos: 200
+  video_length: 60   # seconds
+  fps: 5
+  frame_size: 224
+
+training:
+  batch_size: 8
+  epochs: 30
+  learning_rate: 1e-4
+  optimizer: AdamW
+  scheduler: cosine
+  early_stopping: 5
+
+model:
+  backbone: timesformer
+  text_encoder: Sentence Transformer
